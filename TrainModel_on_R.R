@@ -16,7 +16,7 @@ layer_dense(model,units = 128,activation = 'relu')
 layer_dropout(model,rate=0.01)
 layer_dense(model,units = 90,activation = 'relu')
 layer_dropout(model,rate=0.01)
-layer_dense(model,units = 5,activation = 'softmax')
+layer_dense(model,units = 15,activation = 'softmax')
 
 model %>% compile(
   loss = 'categorical_crossentropy',
